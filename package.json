@@ -1,11 +1,11 @@
 {
-  "author": {
-    "name": "Steve Mao",
-    "email": "maochenyan@gmail.com",
-    "url": "https://github.com/stevemao"
+  "author": "Steve Mao <maochenyan@gmail.com> (https://github.com/stevemao)",
+  "bin": {
+    "get-pkg-repo": "src/cli.js"
   },
-  "bin": "./src/cli.js",
-  "bugs": "https://github.com/conventional-changelog/get-pkg-repo/issues",
+  "bugs": {
+    "url": "https://github.com/conventional-changelog/get-pkg-repo/issues"
+  },
   "description": "Get repository user and project information from package.json file contents.",
   "engines": {
     "node": ">=6.9.0"
@@ -19,7 +19,7 @@
   ],
   "license": "MIT",
   "main": "src/index.js",
-  "name": "get-pkg-repo",
+  "name": "@latiwesh/get-pkg-repo",
   "renovate": {
     "extends": [
       "config:base",
@@ -32,13 +32,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/conventional-changelog/get-pkg-repo.git"
+    "url": "git+https://github.com/conventional-changelog/get-pkg-repo.git"
   },
   "scripts": {
     "dev": "docker run --rm --user node -v \"$(pwd)\":/app -w /app -it node:6 sh -c \"yarn install; yarn test; bash\"",
     "test": "eslint src/ && nyc mocha --opts mocha.opts src/**/*.spec.js"
   },
-  "version": "4.1.1",
+  "version": "2.0.1",
   "dependencies": {
     "@latiwesh/parse-github-repo-url": "^1.4.2",
     "hosted-git-info": "^2.1.4",
