@@ -1,6 +1,6 @@
 'use strict';
 
-const hostedGitInfo = require(`hosted-git-info`);
+const hostedGitInfo = require(`@latiwesh/hosted-git-info`);
 const parseRepositoryURL = require(`@latiwesh/parse-github-repo-url`);
 
 module.exports = packageData => {
